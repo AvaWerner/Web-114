@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--Ava Werner 11/12/25-->
+<html lang="en">
+    <head>
+        <title>Web-114 Functions Project</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1>What is the purpose of a function?</h1>
+        <p>Functions are reusable blocks of code thats can perform  a specific task, making your programs more organized, efficient, and easier to maintain.</p>
+        <h3>Click F12 to see the messages.</h3>
+        <script>
+            let username = window.prompt("Enter your name:");
+            let averageGas;
+            function calcGasAvg(averageGas){
+                let entryCount = 0;
+                let total = 0;
+                let weeklyGas = 0;
+                let firstweekgas = window.prompt("Enter your first week's gas total:");
+                firstweekgas = Number(firstweekgas);
+                total = total + firstweekgas;
+                do{
+                    weeklyGas = window.prompt("Enter your next week's gas total. Enter -1 when you are done.");
+                    weeklyGas = Number(weeklyGas);
+                    total = total + weeklyGas;
+                    entryCount = entryCount + 1;
+                }while (weeklyGas !== -1);
+                total = total + 1;
+                if (entryCount > 0){
+                    return averageGas = total / entryCount;
+                }
+                else{
+                    averageGas = 0;
+                }
+            }
+            let gas = calcGasAvg(averageGas);
+            confirm(username + "'s average weekly gas bill is " + gas.toFixed(2));
+
+        </script>
+    </body>
+</html>
