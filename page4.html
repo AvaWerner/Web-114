@@ -1,0 +1,38 @@
+<!--Ava Werner 12/2/2025-->
+<!DOCTYPE html>
+ <html lang="en">
+    <head>
+        <title>Gilmore Girls Quiz</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body id="page4">
+        
+        <main>
+            <header class="head">Question 4 </header>
+            <!--Photo of Emily-->
+            <div class="photo" ><img src="images/Emily.jpeg" alt="Emily" class="img_size"></div>
+            <!--Question Box-->
+            <div class="question">What is the name of Rory's Grandma?</div>
+            <!--Answer Options-->
+            <div id="options">
+                <button class="buttons" id="CorrectAnswer">1. Emily</button>
+                <button class="buttons" id="wrongAnswer1">2. Beth</button>
+                <button class="buttons" id="wrongAnswer2">3. Rose</button>
+            </div>
+        </main>
+        <!--Next Page Button-->
+        <footer class="footer"><button id="nextButtonP4" class="nextButton"><img src="images/Next_Button.png" alt="Next Button"></button></footer>
+        <!--Next Page Button Script-->
+        <script>
+            let next = document.getElementById("nextButtonP4");
+            next = next.addEventListener("click", nextPage);
+            function nextPage(event){
+                window.location.assign("page5.html");
+            }
+        </script>
+        <!--Button Script Link-->
+        <script src="buttons.js"></script>
+    </body>
+ </html>

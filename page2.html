@@ -1,0 +1,38 @@
+<!--Ava Werner 12/2/2025-->
+<!DOCTYPE html>
+ <html lang="en">
+    <head>
+        <title>Gilmore Girls Quiz</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body id="page2">
+        
+        <main>
+            <header class="head">Question 2 </header>
+            <!--Photo of Lorlai-->
+            <div class="photo" ><img src="images/Lorlai.jpeg" alt="Lorlai" class="img_size"></div>
+            <!--Question Box-->
+            <div class="question">What is Lorlai's favorite drink?</div>
+            <!--Answer Options-->
+            <div id="options">
+                <button class="buttons" id="CorrectAnswer">1. Coffee</button>
+                <button class="buttons" id="wrongAnswer1">2. Iced Tea</button>
+                <button class="buttons" id="wrongAnswer2">3. Wine</button>
+            </div>
+        </main>
+        <!--Next Page Button-->
+        <footer class="footer"><button id="nextButtonP2" class="nextButton"><img src="images/Next_Button.png" alt="Next Button"></button></footer>
+        <!--Next Page Button Script-->
+        <script>
+            let next2 = document.getElementById("nextButtonP2");
+            next2 = next2.addEventListener("click", nextPage);
+            function nextPage(event){
+                window.location.assign("page3.html");
+            }
+        </script>
+        <!--Button Script Link-->
+        <script src="buttons.js"></script>
+    </body>
+ </html>

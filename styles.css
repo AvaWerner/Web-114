@@ -1,0 +1,204 @@
+
+/*Ava Werner 12/2/2025*/
+/*This Styles Sheet Controls The Style Of index.html, pages 1-5, and closingPage*/
+* {
+    padding: 0;
+    margin: 0;
+}
+/*Main Menu Styes*/
+#menu {
+    background-image:url('images/menu_BG.jpeg');
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+#Icon {
+    padding-top: 10rem;
+    display: grid;
+    justify-content: center;
+}
+#logo {
+    width: 491px;
+    height: 241px;
+}
+/*Button Controls For All Pages*/
+.Buttons { /*For index.html*/
+    display: grid;
+    justify-content: center;
+}
+/*playbutton For index.html*/
+#play {
+    margin-top: 5rem;
+    border-style: none;
+    width: 8rem;
+    height: auto;
+}
+#play:hover {
+    border-radius: 15px;
+   box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.5); 
+}
+#options {/*Div Controls For The Three Options*/
+    margin-top: 1rem;
+    display: grid;
+    justify-content: center;
+}
+.buttons {/*Button Controls For Inside The Options Div*/
+    margin-bottom: 1rem;
+    padding: 15px;
+    padding-right: 15rem;
+    background-color: white;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    border-radius: 20px;
+}
+.buttons:hover {
+    background-color: lightgrey;
+}
+#CorrectAnswer {/*Controls The Correct Answer Before clicked*/
+    background-color: white;
+}
+#CorrectAnswer:hover {
+    background-color: lightgray;
+}
+/*Next Button Controls On All Pages*/
+.nextButton {
+    border-style: none;
+    border-radius: 20px;
+}
+.nextButton:hover {
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.5); 
+}
+/*Controls The Text Box With The questions On All Pages*/
+.question {
+    margin-top: 2rem;
+    padding: 25px;
+    background-color: white;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    border-radius: 20px;
+}
+/*Image Controls For All Pages*/
+.photo {
+    margin-top: 2rem;
+    display: grid;
+    justify-content: center;
+    width: 576px;
+    height: 433px;
+}
+.img_size {
+    width: 576px;
+    height: 433px;
+}
+
+/*Controls The h1 For All Pages*/
+.head {
+    background-color: white;
+    margin-top: 1rem;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+    border-style: solid;
+    border-color: black;
+    border-radius: 15px;
+}
+/*Only Controls The Footers With the class .footer*/
+.footer {
+    display: flex;
+    justify-content: flex-end;
+}
+/*Controls The Footer On All Pages*/
+/*#EndPageFooter {
+    display: grid;
+    justify-content: center;
+}*/
+/*Page 1 Body Controls*/
+#page1 {
+    display: grid;
+    justify-content: center;
+    background-image: url(images/lukes_BG.jpeg);
+}
+/*Page 2 Body Controls*/
+#page2 {
+    display: grid;
+    justify-content: center;
+    background-image: url(images/Lorlai_BG.jpeg);
+}
+/*Page 3 Body Controls*/
+#page3{
+    display: grid;
+    justify-content: center;
+    background-image: url(images/Rorai_BG.jpeg);
+}
+/*Page 4 Body Controls*/
+#page4 {
+    display: grid;
+    justify-content: center;
+    background-image: url(images/Emily_BG.png);
+}
+/*Page 1 Body Controls*/
+#page5 {
+    display: grid;
+    justify-content: center;
+    background-image: url(images/Kirk_BG.jpeg);
+}
+
+/*Thank you Page Body Controls*/
+#End {
+    background-color: #f27f3d;
+    display: grid;
+    justify-content: center;
+    margin-top: 10rem;
+}
+
+#ThankYouText {
+    display: grid;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+ #EndPageFooter {
+    display: grid;
+    justify-content: center;
+}
+
+/*Media Quereis For All Pages*/
+
+@media (max-width: 700px) {
+
+    body {
+        margin-top: 5rem;
+    }
+    .img_size {
+        width: 476px;
+        height: 357px;
+        border-radius: 20px;
+    }
+    .photo {
+        width: 476px;
+        height: 357px;
+    }
+    #Endphoto {
+        width: 676px;
+        height: 357px;
+    }
+}
+
+@media (max-width: 400px) {
+    body {
+        margin-top: 5rem;
+    }
+    #logo {
+        width: 350px;
+        height: 241px;
+    }
+    .img_size {
+        width: 357px;
+        height: 357px;
+        border-radius: 20px;
+    }
+    .photo {
+        width: 357px;
+        height: 357px;
+    }
+}

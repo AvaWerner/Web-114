@@ -1,0 +1,38 @@
+<!--Ava Werner 12/2/2025-->
+<!DOCTYPE html>
+ <html lang="en">
+    <head>
+        <title>Gilmore Girls Quiz</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body id="page1">
+        
+        <main>
+            <header class="head">Question 1</header>
+            <!--Photo of Luke-->
+            <div class="photo" ><img src="images/Luke.jpeg" alt="Luke" class="img_size"></div>
+            <!--Question Box-->
+            <div class="question">What was Lukes berfore it became a dinner?</div>
+            <!--Answer Options-->
+            <div id="options">
+                <button class="buttons" id="wrongAnswer1">1. Coffee Shop</button>
+                <button class="buttons" id="CorrectAnswer">2. Hardwear Store</button>
+                <button class="buttons" id="wrongAnswer2">3. Ice Cream Shop</button>
+            </div>
+        </main>
+        <!--Next Page Icon-->
+        <footer class="footer"><button id="nextButtonP1" class="nextButton"><img src="images/Next_Button.png" alt="Next Button"></button></footer>
+        <script>
+            //Next Page Button Script
+            let next = document.getElementById("nextButtonP1");
+            next = next.addEventListener("click", nextPage);
+            function nextPage(event){
+                window.location.assign('page2.html');
+            }
+        </script>
+        <!--Button Script Link-->
+        <script src="buttons.js"></script>
+    </body>
+ </html>
